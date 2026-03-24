@@ -1,21 +1,43 @@
 # Stock Analyser Blueprint Site
 
-This repository now includes a simple static site for the institutional-grade AI stock predictor blueprint.
+This repository includes a static site for the institutional-grade AI stock predictor blueprint.
 
-## How to access the site locally
+## Access locally
 
 From the repository root, run:
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 Then open:
 
-- `http://localhost:8000/`
+- `http://127.0.0.1:8000/`
 
-## Files
+## Access on GitHub Pages
 
-- `index.html` — Landing page/site view.
-- `styles.css` — Site styling.
-- `INSTITUTIONAL_AI_STOCK_PREDICTOR_BLUEPRINT.md` — Full technical blueprint document.
+This repo now includes:
+
+- `docs/index.html` (GitHub Pages entrypoint)
+- `docs/styles.css`
+- `docs/INSTITUTIONAL_AI_STOCK_PREDICTOR_BLUEPRINT.md`
+- `.github/workflows/deploy-pages.yml` (deploys `docs/` to Pages on pushes to `main`)
+
+After merging to `main`, enable **Settings → Pages → Build and deployment → GitHub Actions**.
+
+Your URL will typically be:
+
+- `https://<username>.github.io/<repository>/`
+
+## If you still see 404
+
+- Confirm the branch with site files is merged to `main`.
+- Confirm Pages source is set to **GitHub Actions**.
+- Wait 1–3 minutes for first deployment to finish.
+- Check the **Actions** tab for workflow failures.
+
+## Files in repository root
+
+- `index.html` — local/static entry page.
+- `styles.css` — local/static styling.
+- `INSTITUTIONAL_AI_STOCK_PREDICTOR_BLUEPRINT.md` — full technical blueprint.
