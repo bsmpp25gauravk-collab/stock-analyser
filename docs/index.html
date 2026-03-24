@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institutional AI Stock Predictor Blueprint (India)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>Institutional-Grade AI Stock Predictor (India)</h1>
+        <p>
+          A practical blueprint for building robust, risk-aware, and execution-ready
+          quant trading systems for NSE/BSE.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <nav class="toc">
+        <h2>Quick Navigation</h2>
+        <ul>
+          <li><a href="#core">Core Principle</a></li>
+          <li><a href="#data">Data Foundation</a></li>
+          <li><a href="#features">Feature Engineering</a></li>
+          <li><a href="#models">Model Stack</a></li>
+          <li><a href="#risk">Validation & Risk Controls</a></li>
+          <li><a href="#deploy">Deployment Architecture</a></li>
+          <li><a href="#roadmap">Implementation Roadmap</a></li>
+          <li><a href="#failures">Failure Modes</a></li>
+        </ul>
+      </nav>
+
+      <section id="core">
+        <h2>Core Principle</h2>
+        <p>
+          Durable alpha is mostly an engineering and risk-management challenge, not a
+          model-selection trick. The system must survive low signal-to-noise and
+          non-stationary market conditions.
+        </p>
+      </section>
+
+      <section id="data">
+        <h2>1) Data Foundation</h2>
+        <ul>
+          <li>Microstructure event streams (L2/L3 where available).</li>
+          <li>Fundamental, macro, and sector-level breadth inputs.</li>
+          <li>Alternative data: NLP, ESG/BRSR, macro proxies.</li>
+          <li>Hard data quality rules: PIT joins, symbol history, corporate actions.</li>
+        </ul>
+      </section>
+
+      <section id="features">
+        <h2>2) Feature Engineering</h2>
+        <ul>
+          <li>Fractional differentiation and regime-aware normalization.</li>
+          <li>Order book imbalance, spread and queue dynamics.</li>
+          <li>Cross-sectional momentum and event proximity features.</li>
+          <li>Explicit leakage prevention via embargo/purge controls.</li>
+        </ul>
+      </section>
+
+      <section id="models">
+        <h2>3) Model Stack</h2>
+        <ul>
+          <li>GBDT for robust ranking/classification.</li>
+          <li>Temporal models for sequence dependencies.</li>
+          <li>RL policy for execution optimization in simulated LOB.</li>
+          <li>Meta-learner for regime-aware blending.</li>
+        </ul>
+      </section>
+
+      <section id="risk">
+        <h2>4) Validation & Risk Controls</h2>
+        <ul>
+          <li>CPCV + walk-forward retraining.</li>
+          <li>Event-driven backtests with slippage and partial fills.</li>
+          <li>Risk-adjusted objectives (IR, drawdown, tail metrics).</li>
+          <li>Live kill-switches and volatility-based deleveraging.</li>
+        </ul>
+      </section>
+
+      <section id="deploy">
+        <h2>5) Deployment</h2>
+        <ul>
+          <li>Low-latency inference/routing runtime for live execution.</li>
+          <li>Offline distributed training and versioned artifacts.</li>
+          <li>Feature store parity checks to prevent train-serve skew.</li>
+          <li>Drift monitoring and automated pause policies.</li>
+        </ul>
+      </section>
+
+      <section id="roadmap">
+        <h2>6) Implementation Roadmap</h2>
+        <ol>
+          <li>Research platform baseline.</li>
+          <li>Execution realism and risk instrumentation.</li>
+          <li>Advanced data + regime ensemble.</li>
+          <li>Production hardening and governance.</li>
+        </ol>
+      </section>
+
+      <section id="failures">
+        <h2>7) Common Failure Modes</h2>
+        <ul>
+          <li>Leakage and survivorship bias.</li>
+          <li>Ignoring costs, impact, and liquidity constraints.</li>
+          <li>Over-optimizing hit-rate instead of risk-adjusted returns.</li>
+          <li>No drift controls during regime breaks.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Full Document</h2>
+        <p>
+          Read the complete technical version in
+          <a href="INSTITUTIONAL_AI_STOCK_PREDICTOR_BLUEPRINT.md">INSTITUTIONAL_AI_STOCK_PREDICTOR_BLUEPRINT.md</a>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
